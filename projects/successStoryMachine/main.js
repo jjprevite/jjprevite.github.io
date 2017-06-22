@@ -76,6 +76,7 @@ function getRandomInt(min, max) {
 }
 
 	button.addEventListener("click", function(){
+		document.getElementById("instructions").style.display = 'none';
 		var min = 0;
 		var max = stories.length;
 	if(max === 0){
@@ -91,7 +92,7 @@ function getRandomInt(min, max) {
 		link.href = story.link;
 
 		//this line below empties the container so we don't get multiple tweet buttons
-		document.getElementById('container').innerHTML = '';
+		document.getElementById("container").innerHTML = '';
 
 		twttr.widgets.createShareButton(
   		'/',
