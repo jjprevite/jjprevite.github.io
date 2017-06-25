@@ -1,4 +1,4 @@
-cvar title = document.getElementById("story-title");
+var title = document.getElementById("story-title");
 var link = document.getElementById("story-link");
 var button = document.querySelector("#getStory");
 var tweet = document.getElementById("tweet");
