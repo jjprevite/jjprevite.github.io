@@ -67,9 +67,7 @@ a:hover {
 }
 
 .section{
-	height: 70%;
-	padding-top: 75px;
-	padding-bottom: 100px;
+	height: 375px;
 	padding-left: 15px;
 	padding-right: 15px;
 	text-align: center;
@@ -93,6 +91,16 @@ a:hover {
 .section4{
 	background-color: #CE5A40;
 }
+
+.grow:hover
+{
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+  cursor: pointer;
+
+}
+
 
 .extra-padding{
 	padding-left: 100px;
