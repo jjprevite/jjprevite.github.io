@@ -1,7 +1,7 @@
 <template>
     <header>
         <h1>Joe Previte</h1>
-        <h2>Developer, Designer and Life-Long Learner.</h2>
+        <h2 class="sub-heading">Developer, Designer and Life-Long Learner.</h2>
     </header>
 </template>
 
@@ -17,6 +17,10 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
+<style scoped>
+
+.sub-heading{
+  margin-bottom: 50px;
+}
 
 </style>

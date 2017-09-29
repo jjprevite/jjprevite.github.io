@@ -1,7 +1,9 @@
 <template>
   <section id="intro">
-    <h3 class="heading">Hi there!</h3>
-    <p>Nice to meet you! I'm a web developer in training, always looking to learn and grow more. Education lagnauges, culture, music and the outdoors excite me. Currently available for freelance work.</p>    
+    <b-container>
+      <h3 class="section-heading">Howdy!</h3>
+      <p class="section-sub-heading">Pleasure to meet you! Education languages, culture, music and the outdoors excite me. Currently available for full-time hire.</p>    
+  </b-container>
   </section>
 </template>
 
@@ -10,14 +12,13 @@ export default {
   name: 'hello',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
     }
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
 h1, h2 {
   font-weight: normal;
 }
