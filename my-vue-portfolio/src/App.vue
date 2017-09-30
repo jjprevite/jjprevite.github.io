@@ -53,7 +53,7 @@ export default {
   }
 
   h1 {
-    font-size: 10em;
+    font-size: 9em;
   }
 
   h2 {
@@ -77,8 +77,8 @@ export default {
   }
 
   .headshot {
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
     border: 2px solid #42b983;
   }
