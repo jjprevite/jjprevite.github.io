@@ -1,12 +1,22 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import Home from '@/components/Home'
+import BlogPost from '@/components/BlogPost'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/'
+      path: '/',
+      name: 'Home',
+      component: Home
+    },
+    {
+      path: '/blog',
+      name: 'BlogPost',
+      component: BlogPost
     }
-  ]
+  ],
+  mode: 'history'
 })
