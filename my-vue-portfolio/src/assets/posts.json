@@ -1,0 +1,13 @@
+{
+	"posts": [
+		{
+			"title": "Hello World",
+			"id": "success-story-machine",
+			"image": "./logo.png",
+			"description": "Per the freeCodeCamp Front-End Certificate curriculum, I created a Random Quote Machine, or in my case, a Success Story Machine. It is a simple generator that provides links to stories about self-taught developers finding jobs. The purpose was to give the project my own twist and build something that others might find useful.",
+			"technologies": "HTML/CSS, vanillaJS",
+			"struggles": "The most difficult part of this project was successfully using the Twitter API. I had troubles figuring out how to change the text content of the Tweet button after the button had already loaded. After hours of struggling, I finally realized the Twitter API wouldn't let you change the text-data within the tweet button after it loaded.",
+			"learned": "I learned how to use the Twitter API and how to write a 'getter' function. The Twitter API docs didn't have a lot of examples so I had to find outside sources in order to fully understand how everything worked. However, I am now familiar with the API and feel confident in my abilities to use it in future applications."
+		}
+	]
+}
