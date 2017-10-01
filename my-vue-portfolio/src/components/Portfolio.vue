@@ -22,7 +22,7 @@
             <img src="portfolioItem.img">
           </figure>
           <ul>
-            <li v-if="portfolioItem.blog"><a :href="portfolioItem.blog"><button>Blog Post</button></a></li>
+            <li v-if="portfolioItem.blog"><router-link v-bind:to="'/blog/' + portfolioItem.id"><button>Blog Post</button></router-link></li>
             <li v-if="portfolioItem.medium"><a :href="portfolioItem.medium"><button>Medium Post</button></a></li>
             <li v-if="portfolioItem.url" ><a :href="portfolioItem.url"><button>See live</button></a></li>
             <li v-if="portfolioItem.codeUrl"><a :href="portfolioItem.codeUrl"><button>View Code</button></a></li>
@@ -45,7 +45,7 @@ export default {
           blog: false,
           codeUrl: false,
           description: 'I contributed to an open-source project called Habitica, which is a gamified task manager built using the MEAN stack. I fixed an issue with a friend, submitted a pull request and it was merged into the project.',
-          id: 1,
+          id: 'habitica',
           img: './assets/colorgame.gif',
           medium: 'https://goo.gl/bCSHL8',
           name: 'Habitica Contribution',
@@ -53,10 +53,10 @@ export default {
           url: false
         },
         {
-          blog: 'https://jjprevite.github.io/posts/successmachineblog.html',
+          blog: true,
           codeUrl: 'https://codepen.io/jjprevite/pen/awwbRd',
           description: 'For a freeCodeCamp project, I decided to turn a Random Quote Generator into a Success Story Machine. It provides you with links to stories of self-taugh programmers making it in the industry.',
-          id: 2,
+          id: 'success-story-machine',
           img: './assets/colorgame.gif',
           medium: false,
           name: 'Success Story Machine',
@@ -67,7 +67,7 @@ export default {
           blog: 'https://jjprevite.github.io/posts/localweatherblog.html',
           codeUrl: 'https://codepen.io/jjprevite/pen/bRojZo',
           description: 'Based on user stories defined by freeCodeCamp, I built a website that shows the local weather using geolocation and the Dark Sky API.',
-          id: 3,
+          id: 'local-weather',
           img: './assets/localweatherproject.gif',
           medium: false,
           name: 'Local Weather Project',
@@ -78,7 +78,7 @@ export default {
           blog: false,
           codeUrl: 'https://github.com/Web-Bakers/web-bakers',
           description: 'As part of an online web development cohort called Chingu, I worked with two friends on a project that used Node.js, Express,js, Mongoose and MongoDB to build a basic app. We called it Web Bakers - "an ideas kitchen that kneads, preps and showcases your projects."',
-          id: 4,
+          id: 'web-bakers',
           img: false,
           medium: false,
           name: 'Web Bakers - a Chingu Collaborative Project',
@@ -89,7 +89,7 @@ export default {
           blog: false,
           codeUrl: false,
           description: 'A WordPress landing page I worked on with the team at Distill Mill during my internship. I was responsible for setting up the "back-end" or PHP and HTML that called in the content from Advanced Custom Fields.',
-          id: 5,
+          id: 'paul-rene-website',
           img: './assets/localweatherproject.gif',
           medium: false,
           name: 'Paul Rene Furniture Website',
@@ -100,7 +100,7 @@ export default {
           blog: false,
           codeUrl: false,
           description: 'A WordPress site I helped with during my internship at Distill Mill. For this project, I worked on both the back-end and front-end, using both HTML, CSS and PHP. *This site is not yet live.*',
-          id: 6,
+          id: 'touchdown-sportswear-website',
           img: './assets/localweatherproject.gif',
           medium: false,
           name: 'Touchdown Sportswear Website',
