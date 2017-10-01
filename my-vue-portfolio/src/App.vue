@@ -1,14 +1,8 @@
 <template>
   <div id="app">
-    <main>
       <app-header></app-header>
-      <img class="headshot" src="./assets/headshot.jpg">
-      <intro></intro>
-      <portfolio></portfolio>
-      <contact></contact>
       <router-view></router-view>
       <app-footer></app-footer>
-    </main>
   </div>
 </template>
 
@@ -74,13 +68,6 @@ export default {
 
   h6 {
     font-size: 1.1em;
-  }
-
-  .headshot {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    border: 2px solid #42b983;
   }
 
   section {
