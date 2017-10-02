@@ -1,13 +1,54 @@
 {
 	"posts": [
 		{
-			"title": "Hello World",
+			"title": "Building a Success Story Machine",
 			"id": "success-story-machine",
 			"image": "./logo.png",
+			"video": false,
 			"description": "Per the freeCodeCamp Front-End Certificate curriculum, I created a Random Quote Machine, or in my case, a Success Story Machine. It is a simple generator that provides links to stories about self-taught developers finding jobs. The purpose was to give the project my own twist and build something that others might find useful.",
 			"technologies": "HTML/CSS, vanillaJS",
-			"struggles": "The most difficult part of this project was successfully using the Twitter API. I had troubles figuring out how to change the text content of the Tweet button after the button had already loaded. After hours of struggling, I finally realized the Twitter API wouldn't let you change the text-data within the tweet button after it loaded.",
-			"learned": "I learned how to use the Twitter API and how to write a 'getter' function. The Twitter API docs didn't have a lot of examples so I had to find outside sources in order to fully understand how everything worked. However, I am now familiar with the API and feel confident in my abilities to use it in future applications."
+			"struggles": "<p>The most difficult part of this project was successfully using the Twitter API. I had troubles figuring out how to change the text content of the Tweet button after the button had already loaded. After hours of struggling, I finally realized the Twitter API wouldn't let you change the text-data within the tweet button after it loaded.</p><p>In order to fix that, I had to use a function they mention in the docs called createShareButton. Now, every time the user clicks the button \"Get Success Story\", a new tweet button is generated with the link inside. This solved my problem and made it possible to have a button for the user to tweet the story.</p><p>The other problem I ran into was generating the same story twice in a row. In order to prevent this, I had to remove the story from the array so it wouldn't come up twice. This also allowed the user to get all the stories at least once before seeing the same story again.</p>",
+			"learned": "<p>I learned how to use the Twitter API and how to write a \"getter\" function. The Twitter API docs didn't have a lot of examples so I had to find outside sources in order to fully understand how everything worked. However, I am now familiar with the API and feel confident in my abilities to use it in future applications.</p><p>During this project, I pair-programmed with a friend who is a Senior Developer who taught me how to write a getter function. He mentioned that the importance of this is encapsulating information into one place: a function. I used this strategy to encapsulate my array of stories.</p>"
+		},
+		{
+			"title": "Local Weather Project",
+			"id": "local-weather-project",
+			"image": "./logo.png",
+			"video": false,
+			"description": "For this project, I was required to use geolocation to find a user's location and then to use a weather API to display information based on that location.",
+			"technologies": "HTML/CSS, vanillaJS and jQuery",
+			"struggles": "<p>The hardest part of this project was the first day I started working on it. I couldn't figure out how to make an API call to Dark Sky without using a proxy server (to hide the API key). Luckily, after 4 hours of researching on Stack Overflow along with a friend, we were able to figure out using AJAX.</p>",
+			"learned": "<p>I learned how to make API calls using AJAX and how to use jQuery to create basic animations. The Dark Sky docs didn't want me to have my API key public (which makes sense) but it set me back in the beginning. Using AJAX and \"jsonp\", I was able to make API calls.</p><p>After I finished the project, I decided to add some animation to make it more interactive and user-friendly. I used jQuery to add a \"loading screen\" so users knew the weather information needed a few extra seconds to load. In my next projects, I hope to use more jQuery.</p>"
+		},
+		{
+			"title": "Web Bakers - a Chingu Collaboration Web App",
+			"id": "web-bakers",
+			"image": false,
+			"video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/SfPO1UfYoB8?ecver=1' frameborder='0' allowfullscreen></iframe>",
+			"description": "For this project, I joined a team of two other developers I met through the Chingu community- Rachel and Reuben- and we had approximately 5 weeks to build an MVP. We assigned three roles - Project Manager/Git Master, Lead Frontend and Lead Backend. I offered to be the Lead Backend. I also offered to design the logo since I have some background in graphic design.We decided to build a web app for people to share project ideas.",
+			"technologies": "HTML/CSS, MongoDB, Mongoose, Express and Passport.",
+			"struggles": "<p>The toughest part of this project was finding time to work on this. Originally, I took the ambition to suggest we commit to 7 hours/week. Granted, this was before I started an internship at a web design agency called Distill Mill. Little did I know, I'd be working most days from 8:30pm-6:30pm. That left little time to work on this project.</p><p>However, my teammates were understanding because they also weren't able to commit as much time as they had originally hoped to.</p><p>The most challenging technical issue we ran into was authentication. When we implemented Passport.js, we expected it to authenticate users when they logged in. However, it didn't work. We tried troubleshooting it and then I finally figured it out! It was because Passport was checking the username against the database but we asked users to login with their email. So to fix it, all I had to do was change the login input to ask for username instead.</p>",
+			"learned": "<p>The most important lesson I learned was working in a group setting and being able to work on my own end of the website.</p><p>I had worked on small projects with friends but never in a big project setting such as this one. It was thrilling knowing we would each work on our own piece of the project and then bring it together to create a web app.</p><p>I learned about git workflow and found it was easiest to avoid merge conflicts by working on separate branches and having frequent communication about the parts of the web app we were each working on.</p><p>All in all, it was a lot of fun and I enjoyed working in a team setting and see the project from start to finish.</p>"
+		},
+		{
+			"title": "Paul Rene Website",
+			"id": "paul-rene-website",
+			"image": "../assets/paulrenefurniture.gif",
+			"video": false,
+			"description": "As my first large project at my internship with Distill Mill, I coded the backend and some frontend  of a landing page for Paul Rene Furniture based on a Photoshop mockup.",
+			"technologies": "HTML/CSS and WordPress (PHP), Advanced Custom Fields plugin",
+			"struggles": "<p>I struggled with CSS the most. It's because I didn't have as much practice with my CSS as I thought I did. I began coding in December 2016 and started this project in August 2017. During that time period, I focused most of my energy on learning JavaScript so I was rough around the edges when it came to writing CSS.</p><p>I spent hours trying to figure out how to move one piece here or there and it was frustrating. It felt discouraging because what I once thought was effortless actually felt difficult.</p> ",
+			"learned": "<p>I learned to be patient with myself and develop a better system for debugging CSS. In the beginning of the project, I made silly mistakes and couldn't figure out what was wrong without my boss' guidance. Luckily, I grew a lot on the frontend side and wrote CSS quicker towards the end.</p><p>I also learned how to use the Advanced Custom Fields plugin to create a unique experience for our client. It felt like my boss tossed me into the deep end but I didn't sink. I couldn't let myself. I took advantage of him willing to teach me and help me grow and I succeeded.</p><p>I made a lot of mistakes that he had to refactor in the end- like not closing my div tags or forgetting to write conditionals to proof the code from breaking but I learned a lot.</p>"
+		},
+		{
+			"title": "Touchdown Sportswear Website",
+			"id": "touchdown-sportswear-website",
+			"image": "../assets/paulrenefurniture.gif",
+			"video": false,
+			"description": "This project consisted of a custom WordPress theme built for a local business in Peoria, AZ. My boss tasked me with the backend side of this project but ended up needing my help on the frontend as well.",
+			"technologies": "HTML/CSS and WordPress (PHP), Advanced Custom Fields plugin",
+			"struggles": "<p>The most difficult part of this project was coding the Bootstrap carousel sliders. There were two on the landing page and I had trouble keeping the size of the slides to be consistent regardless of the size of the image inside the slide.</p><p>My boss gave me some pointers and luckily, they helped me fix any errors/bugs that arose in the beginning of the project.</p>",
+			"learned": "<p>I learned that even \"simple\" websites take more time than you would like to build. It amazed me at how long it took to build a website with a single-page landing-page and one additional page. However, since it was a custom theme, it was more complex than your standard WordPress site.</p><p>In additon to that, I noticed a jump in my speed and my ability to figure things out. My boss gave me the job to create a custom post type using a plugin and with a few hints, I was able to figure it out on my own. Overall, this project improved my level of confidence in my WordPress abilities and I now feel certain I can take on custom WordPress projects on my own.</p>"
 		}
 	]
 }
