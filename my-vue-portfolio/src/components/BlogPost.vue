@@ -1,9 +1,10 @@
 <template>
     <article id="single-blog-post">
         <h1 class="heading">{{ post.title }}</h1>
-        <figure>
+        <figure v-if="post.image">
             <img :src="post.image">
         </figure>
+        <div v-if="post.video" v-html="post.video"></div>
         <section id="description">
           <h3 class="heading-description">Description</h3>
           <p>{{ post.description }}</p>
