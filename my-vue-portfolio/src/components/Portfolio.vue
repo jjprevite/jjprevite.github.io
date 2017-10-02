@@ -64,10 +64,10 @@ export default {
           url: 'https://jjprevite.github.io/projects/successStoryMachine/index.html'
         },
         {
-          blog: 'https://jjprevite.github.io/posts/localweatherblog.html',
+          blog: true,
           codeUrl: 'https://codepen.io/jjprevite/pen/bRojZo',
           description: 'Based on user stories defined by freeCodeCamp, I built a website that shows the local weather using geolocation and the Dark Sky API.',
-          id: 'local-weather',
+          id: 'local-weather-project',
           img: './assets/localweatherproject.gif',
           medium: false,
           name: 'Local Weather Project',
@@ -75,7 +75,7 @@ export default {
           url: 'https://jjprevite.github.io/projects/localWeather/index.html'
         },
         {
-          blog: false,
+          blog: true,
           codeUrl: 'https://github.com/Web-Bakers/web-bakers',
           description: 'As part of an online web development cohort called Chingu, I worked with two friends on a project that used Node.js, Express,js, Mongoose and MongoDB to build a basic app. We called it Web Bakers - "an ideas kitchen that kneads, preps and showcases your projects."',
           id: 'web-bakers',
@@ -86,7 +86,7 @@ export default {
           url: false
         },
         {
-          blog: false,
+          blog: true,
           codeUrl: false,
           description: 'A WordPress landing page I worked on with the team at Distill Mill during my internship. I was responsible for setting up the "back-end" or PHP and HTML that called in the content from Advanced Custom Fields.',
           id: 'paul-rene-website',
