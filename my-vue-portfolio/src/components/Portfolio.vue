@@ -5,8 +5,8 @@
     
     <b-container>
       <b-row>
-        <b-col>
-          <button v-for="portfolioItem in portfolioItems" @click="show (portfolioItem.id)">{{ portfolioItem.name }}</button>
+        <b-col v-for="portfolioItem in portfolioItems">
+          <button class="portfolio-card" @click="show (portfolioItem.id)">{{ portfolioItem.name }}</button>
         </b-col>
       </b-row>
     </b-container>
@@ -144,6 +144,22 @@ export default {
 
   a {
     color: #42b983;
+  }
+
+  .portfolio-card {
+    background-color: white;
+    border: 2px solid #2c3e50;
+    color: #2c3e50;
+    font-weight: 600;
+    transition: 0.4s;
+    height: 150px;
+    width: 150px;
+  }
+
+  .portfolio-card:hover{
+    background-color: #2c3e50;
+    color: #fff;
+    font-size: 1.15em;
   }
 
   .portfolio-item-container {
