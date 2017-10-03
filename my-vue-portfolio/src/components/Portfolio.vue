@@ -18,8 +18,8 @@
         <b-container class="portfolio-item-container">
           <h4 class="portfolio-item-heading">{{ portfolioItem.name }}</h4>
           <p class="portfolio-item-description">{{ portfolioItem.description }}</p>
-          <figure>
-            <img src="portfolioItem.img">
+          <figure v-if="portfolioItem.image">
+            <img class="portfolio-item-image" :src="portfolioItem.image">
           </figure>
           <ul>
             <li v-if="portfolioItem.blog"><router-link v-bind:to="'/blog/' + portfolioItem.id"><button>Blog Post</button></router-link></li>
@@ -46,7 +46,7 @@ export default {
           codeUrl: false,
           description: 'I contributed to an open-source project called Habitica, which is a gamified task manager built using the MEAN stack. I fixed an issue with a friend, submitted a pull request and it was merged into the project.',
           id: 'habitica',
-          img: './assets/colorgame.gif',
+          image: '/static/habitica.png',
           medium: 'https://goo.gl/bCSHL8',
           name: 'Habitica Contribution',
           pullRequest: 'https://github.com/HabitRPG/habitica/pull/8784',
@@ -57,7 +57,7 @@ export default {
           codeUrl: 'https://codepen.io/jjprevite/pen/awwbRd',
           description: 'For a freeCodeCamp project, I decided to turn a Random Quote Generator into a Success Story Machine. It provides you with links to stories of self-taugh programmers making it in the industry.',
           id: 'success-story-machine',
-          img: './assets/colorgame.gif',
+          image: '/static/successstorymachine.gif',
           medium: false,
           name: 'Success Story Machine',
           pullRequest: false,
@@ -68,7 +68,7 @@ export default {
           codeUrl: 'https://codepen.io/jjprevite/pen/bRojZo',
           description: 'Based on user stories defined by freeCodeCamp, I built a website that shows the local weather using geolocation and the Dark Sky API.',
           id: 'local-weather-project',
-          img: './assets/localweatherproject.gif',
+          image: '/static/localweather.gif',
           medium: false,
           name: 'Local Weather Project',
           pullRequest: false,
@@ -79,7 +79,7 @@ export default {
           codeUrl: 'https://github.com/Web-Bakers/web-bakers',
           description: 'As part of an online web development cohort called Chingu, I worked with two friends on a project that used Node.js, Express,js, Mongoose and MongoDB to build a basic app. We called it Web Bakers - "an ideas kitchen that kneads, preps and showcases your projects."',
           id: 'web-bakers',
-          img: false,
+          image: '/static/web-bakers.png',
           medium: false,
           name: 'Web Bakers - a Chingu Collaborative Project',
           pullRequest: false,
@@ -90,7 +90,7 @@ export default {
           codeUrl: false,
           description: 'A WordPress landing page I worked on with the team at Distill Mill during my internship. I was responsible for setting up the "back-end" or PHP and HTML that called in the content from Advanced Custom Fields.',
           id: 'paul-rene-website',
-          img: './assets/localweatherproject.gif',
+          image: '/static/paulrenefurniture.gif',
           medium: false,
           name: 'Paul Rene Furniture Website',
           pullRequest: false,
@@ -99,9 +99,9 @@ export default {
         {
           blog: false,
           codeUrl: false,
-          description: 'A WordPress site I helped with during my internship at Distill Mill. For this project, I worked on both the back-end and front-end, using both HTML, CSS and PHP. *This site is not yet live.*',
+          description: 'A WordPress site I helped with during my internship at Distill Mill. For this project, I worked on both the back-end and front-end, using both HTML, CSS and PHP. This site is not yet live, hence no image and no link.*',
           id: 'touchdown-sportswear-website',
-          img: './assets/localweatherproject.gif',
+          image: false,
           medium: false,
           name: 'Touchdown Sportswear Website',
           pullRequest: false,
@@ -156,6 +156,11 @@ export default {
 
   .portfolio-item-description {
 
+  }
+
+  .portfolio-item-image {
+    height: 50%;
+    width: 50%;
   }
 
   .close {
