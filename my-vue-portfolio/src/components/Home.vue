@@ -5,7 +5,6 @@
       <portfolio></portfolio>
       <contact></contact>
       <router-view></router-view>
-      <router-link to="/blog">Blog Post</router-link>
     </main>
 </template>
 
