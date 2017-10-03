@@ -1,7 +1,7 @@
 <template>
     <header>
-        <h1>Joe Previte</h1>
-        <h2 class="sub-heading">Developer, Designer and Life-Long Learner.</h2>
+        <h1 class="site-title"><router-link to="/">Joe Previte</router-link></h1>
+        <h2 class="site-sub-heading">Developer, Designer and Life-Long Learner.</h2>
     </header>
 </template>
 
@@ -10,7 +10,7 @@ export default {
   name: 'Header',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      isHome: false
     }
   }
 }
@@ -19,7 +19,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
-.sub-heading{
+.site-sub-heading{
   margin-bottom: 50px;
 }
 
