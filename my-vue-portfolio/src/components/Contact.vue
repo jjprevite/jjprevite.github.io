@@ -45,4 +45,19 @@ li {
 a {
   color: #42b983;
 }
+
+.fa-icon {
+  width: auto;
+  height: 2em; /* or any other relative font sizes */
+  /*margin: 0 2px;*/
+
+  /* You would have to include the following two lines to make this work in Safari */
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.fa-icon:hover {
+  color: #2c3e50;
+}
+
 </style>
