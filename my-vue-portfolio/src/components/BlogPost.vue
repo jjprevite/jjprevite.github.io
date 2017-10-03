@@ -44,6 +44,13 @@ export default {
 
 </script>
 
-<style>
+<style scoped>
+.site-title a {
+  color: #2c3e50;
+  font-size: 2rem;
+}
 
+.site-sub-heading {
+  font-size: 1rem;
+}
 </style>
