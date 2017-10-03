@@ -70,6 +70,10 @@ export default {
     font-size: 1.1em;
   }
 
+  a:hover, :focus, :active {
+    color: #2c3e50;
+  }
+
   section {
     margin: 50px auto;
   }
