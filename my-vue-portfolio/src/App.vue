@@ -33,12 +33,16 @@ export default {
 </script>
 
 <style>
+  body {
+    background-color: #C5CBD3; /*lavendar gray*/
+  }
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    color: #2c3e50;
+    /*color: #2c3e50; navy blue*/
+    color: #354253;
     margin-top: 60px;
   }
 
@@ -51,27 +55,35 @@ export default {
   }
 
   h2 {
-    font-size: 2em;
+    font-size: 2.7em;
   }
 
   h3 {
-    font-size: 1.7em;
+    font-size: 2.4em;
   }
 
   h4 {
-    font-size: 1.4em;
+    font-size: 2.1em;
   }
 
   h5 {
-    font-size: 1.2em;
+    font-size: 1.8em;
   }
 
   h6 {
-    font-size: 1.1em;
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1.3em;
+  }
+
+  a {
+    color: #4E5053;
   }
 
   a:hover, :focus, :active {
-    color: #2c3e50;
+    color: #8AADDA;
   }
 
   section {
@@ -79,10 +91,14 @@ export default {
   }
 
   .section-heading {
-    margin: 25px 0;
+    margin: 75px 0 10px;
   }
 
-  .section-sub-heading {
-    /*margin: 0 50px 50px;*/
+  .first-heading {
+    margin-top: 50px 0 10px;
+  }
+
+  .v--modal {
+    background-color: #C5CBD3;
   }
 </style>
