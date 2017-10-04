@@ -26,7 +26,7 @@
             <li v-if="portfolioItem.medium"><a :href="portfolioItem.medium"><button class="btn-in-modal">Medium Post</button></a></li>
             <li v-if="portfolioItem.url" ><a :href="portfolioItem.url"><button class="btn-in-modal">See live</button></a></li>
             <li v-if="portfolioItem.codeUrl"><a :href="portfolioItem.codeUrl"><button class="btn-in-modal">View Code</button></a></li>
-            <li v-if="portfolioItem.pullRequest"><a :href="portfolioItem.pullRequest"><button class="btn-in-modal">View Pull Request</button></a></li>
+            <li v-if="portfolioItem.pullRequest"><a :href="portfolioItem.pullRequest"><button class="btn-in-modal">View PR</button></a></li>
           </ul>
         </b-container>
       </modal>
