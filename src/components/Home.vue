@@ -1,5 +1,6 @@
 <template>
     <main>
+      <app-header></app-header>
       <img class="headshot" src="../assets/headshot.jpg">
       <intro></intro>
       <portfolio></portfolio>
@@ -9,6 +10,7 @@
 </template>
 
 <script>
+import Header from './Header.vue'
 import Intro from './Intro.vue'
 import Portfolio from './Portfolio.vue'
 import Contact from './Contact.vue'
@@ -16,6 +18,7 @@ import Contact from './Contact.vue'
 export default {
   name: 'app',
   components: {
+    'app-header': Header,
     'intro': Intro,
     'portfolio': Portfolio,
     'contact': Contact
