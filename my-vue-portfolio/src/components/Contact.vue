@@ -2,7 +2,7 @@
   <section id="contact">
     <b-container>
       <h3 class="section-heading">Want to get in touch?</h3>
-        <p class="section-sub-heading">You can email me at <a href="http://www.google.com/recaptcha/mailhide/d?k=015a8i44khxm1KWQX70TAhrQ==&amp;c=SlUvc6OK_J1S65mx1JLqYJA72bz6iTlBgqfOrV6h8qM=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\x3d015a8i44khxm1KWQX70TAhrQ\x3d\x3d\x26c\x3dSlUvc6OK_J1S65mx1JLqYJA72bz6iTlBgqfOrV6h8qM\x3d', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">j...@gmail.com</a> or contact me via any of the following social networks:</p>
+        <p class="section-sub-heading">You can email me at <a href="http://www.google.com/recaptcha/mailhide/d?k=015a8i44khxm1KWQX70TAhrQ==&amp;c=SlUvc6OK_J1S65mx1JLqYJA72bz6iTlBgqfOrV6h8qM=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\x3d015a8i44khxm1KWQX70TAhrQ\x3d\x3d\x26c\x3dSlUvc6OK_J1S65mx1JLqYJA72bz6iTlBgqfOrV6h8qM\x3d', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">j...@gmail.com</a> </br>or contact me via any of the following social networks:</p>
         <ul>
           <a v-for="socialNetwork in socialNetworks" target="_blank" :href="socialNetwork.url"><li><icon :name="socialNetwork.name"></icon></li></a>
         </ul>
@@ -42,9 +42,9 @@ li {
   margin: 0 10px;
 }
 
-a {
+/*a {
   color: #42b983;
-}
+}*/
 
 .fa-icon {
   width: auto;
