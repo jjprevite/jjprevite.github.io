@@ -1,27 +1,39 @@
 <template>
     <article id="single-blog-post">
-        <h1 class="heading">{{ post.title }}</h1>
-        <figure v-if="post.image">
-            <img :src="post.image">
-        </figure>
-        <div v-if="post.video" v-html="post.video"></div>
+        <b-container>
+          <h1 class="heading">{{ post.title }}</h1>
+          <figure v-if="post.image">
+              <img :src="post.image">
+          </figure>
+          <div v-if="post.video" v-html="post.video"></div>
+        </b-container>
         <section id="description">
-          <h3 class="heading-description">Description</h3>
-          <p>{{ post.description }}</p>
+          <b-container>
+            <h3 class="heading-description">Description</h3>
+            <p class="copy">{{ post.description }}</p>
+          </b-container>
         </section>
         <section id="technologies-used">
-          <h3>Technologies Used</h3>
-          <p>{{ post.technologies }}</p>
+          <b-container>
+            <h3>Technologies Used</h3>
+            <p class="copy">{{ post.technologies }}</p>
+          </b-container>
         </section>
         <section id="what-i-struggled-with">
-          <h3>What I struggled with</h3>
-          <div v-html="post.struggles"></div>
+          <b-container>
+            <h3>What I struggled with</h3>
+            <div class="copy" v-html="post.struggles"></div>
+          </b-container>
         </section>
         <section id="what-i-learned">
-          <h3>What I learned</h3>
-          <div v-html="post.learned"></div>
+          <b-container>
+            <h3>What I learned</h3>
+            <div class="copy" v-html="post.learned"></div>
+          </b-container>
         </section>
-        <router-link to="/">Back to Home</router-link>
+        <b-container>
+          <h6 class="home-link"><router-link to="/">Back to Home</router-link></h6>
+        </b-container>
     </article>
 </template>
 
@@ -45,6 +57,23 @@ export default {
 </script>
 
 <style scoped>
+#single-blog-post {
+  text-align: left;
+}
+
+.heading {
+  margin-bottom: 50px;
+}
+
+figure img {
+  width: 100%;
+  margin: 10px 20px;
+}
+
+.copy {
+  margin: 0 20px;
+}
+
 .site-title a {
   color: #2c3e50;
   font-size: 2rem;
@@ -52,5 +81,10 @@ export default {
 
 .site-sub-heading {
   font-size: 1rem;
+}
+
+.home-link {
+  text-align: center;
+  margin: 0 auto 25px;
 }
 </style>
