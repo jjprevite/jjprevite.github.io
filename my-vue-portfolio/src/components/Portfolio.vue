@@ -13,20 +13,20 @@
 
       <modal v-for="portfolioItem in portfolioItems" :name="portfolioItem.id" :adaptive="true" width="100%" height="100%" @before-open="beforeOpen">
         <div>
-          <button class="close" @click="hide(portfolioItem.id)">Close</button>
+          <button class="close" @click="hide(portfolioItem.id)"></button>
         </div>
         <b-container class="portfolio-item-container">
           <h4 class="portfolio-item-heading">{{ portfolioItem.name }}</h4>
           <p class="portfolio-item-description">{{ portfolioItem.description }}</p>
           <figure v-if="portfolioItem.image">
-            <img class="portfolio-item-image" :src="portfolioItem.image">
+            <img class="portfolio-item-image" :src="portfolioItem.image"/>
           </figure>
           <ul>
-            <li v-if="portfolioItem.blog"><router-link v-bind:to="'/blog/' + portfolioItem.id"><button>Blog Post</button></router-link></li>
-            <li v-if="portfolioItem.medium"><a :href="portfolioItem.medium"><button>Medium Post</button></a></li>
-            <li v-if="portfolioItem.url" ><a :href="portfolioItem.url"><button>See live</button></a></li>
-            <li v-if="portfolioItem.codeUrl"><a :href="portfolioItem.codeUrl"><button>View Code</button></a></li>
-            <li v-if="portfolioItem.pullRequest"><a :href="portfolioItem.pullRequest"><button>View Pull Request</button></a></li>
+            <li v-if="portfolioItem.blog"><router-link v-bind:to="'/blog/' + portfolioItem.id"><button class="btn-in-modal">Blog Post</button></router-link></li>
+            <li v-if="portfolioItem.medium"><a :href="portfolioItem.medium"><button class="btn-in-modal">Medium Post</button></a></li>
+            <li v-if="portfolioItem.url" ><a :href="portfolioItem.url"><button class="btn-in-modal">See live</button></a></li>
+            <li v-if="portfolioItem.codeUrl"><a :href="portfolioItem.codeUrl"><button class="btn-in-modal">View Code</button></a></li>
+            <li v-if="portfolioItem.pullRequest"><a :href="portfolioItem.pullRequest"><button class="btn-in-modal">View Pull Request</button></a></li>
           </ul>
         </b-container>
       </modal>
@@ -77,11 +77,11 @@ export default {
         {
           blog: true,
           codeUrl: 'https://github.com/Web-Bakers/web-bakers',
-          description: 'As part of an online web development cohort called Chingu, I worked with two friends on a project that used Node.js, Express,js, Mongoose and MongoDB to build a basic app. We called it Web Bakers - "an ideas kitchen that kneads, preps and showcases your projects."',
+          description: 'As part of an online web development cohort called Chingu, I worked with two friends on a project building a basic app. We called it Web Bakers - "an ideas kitchen that kneads, preps and showcases your projects."',
           id: 'web-bakers',
           image: '/static/web-bakers.png',
           medium: false,
-          name: 'Web Bakers - a Chingu Collaborative Project',
+          name: 'Web Bakers - a Chingu Project',
           pullRequest: false,
           url: false
         },
@@ -99,7 +99,7 @@ export default {
         {
           blog: false,
           codeUrl: false,
-          description: 'A WordPress site I helped with during my internship at Distill Mill. For this project, I worked on both the back-end and front-end, using both HTML, CSS and PHP. This site is not yet live, hence no image and no link.*',
+          description: 'A WordPress site I helped with during my internship at Distill Mill. For this project, I worked on both the back-end and front-end, using both HTML, CSS and PHP. **This site is not yet live, hence no image and no link.**',
           id: 'touchdown-sportswear-website',
           image: false,
           medium: false,
@@ -128,10 +128,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  h1, h2 {
-    font-weight: normal;
-  }
-
   ul {
     list-style-type: none;
     padding: 0;
@@ -147,19 +143,27 @@ export default {
   }
 
   .portfolio-card {
-    background-color: white;
+    background-color: #354253;
     border: 2px solid #2c3e50;
-    color: #2c3e50;
+    box-shadow: 10px 10px 5px #888888;
+    color: #C5CBD3;
     font-weight: 600;
     transition: 0.4s;
     height: 150px;
     width: 150px;
+    transition: border-radius background-color color 0.3s;
   }
 
-  .portfolio-card:hover{
-    background-color: #2c3e50;
-    color: #fff;
+  .portfolio-card:hover {
+    /*background-color: #3D3F41;*/
+    border-radius: 50%;
+    /*color: #354253;*/
+    color: #C5CBD3;
     font-size: 1.15em;
+  }
+
+  .portfolio-card:active {
+    outline: none;
   }
 
   .portfolio-item-container {
@@ -171,7 +175,9 @@ export default {
   }
 
   .portfolio-item-description {
-
+    margin: 0 auto 15px;
+    max-width: 500px;
+    text-align: center;
   }
 
   .portfolio-item-image {
@@ -179,10 +185,38 @@ export default {
     width: 50%;
   }
 
+  .btn-in-modal {
+    background-color: #354253;
+    border: none;
+    border-radius: 10px;
+    color: #C5CBD3;
+    width: 150px;
+    height: 50px;
+    font-size: 1.25em;
+    transition: border-radius font-weight 0.5s;
+  }
+
+  .btn-in-modal:hover {
+    font-weight: 700;
+  }
+
   .close {
-    width: 100px;
-    height: 200px;
-    background-color: red;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #333D49;
     text-transform: uppercase;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+  }
+
+  .close::before {
+    content: "X";
+    color: #C5CBD3;
+  }
+
+  .close:focus {
+    outline: none;
   }
 </style>
