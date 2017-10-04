@@ -23,4 +23,8 @@ export default {
   margin-bottom: 50px;
 }
 
+.site-title a {
+  color: #354253;
+}
+
 </style>
