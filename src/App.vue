@@ -1,13 +1,11 @@
 <template>
   <div id="app">
-      <app-header></app-header>
       <router-view></router-view>
       <app-footer></app-footer>
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
 import Intro from './components/Intro.vue'
 import Portfolio from './components/Portfolio.vue'
@@ -16,7 +14,6 @@ import Contact from './components/Contact.vue'
 export default {
   name: 'app',
   components: {
-    'app-header': Header,
     'app-footer': Footer,
     'intro': Intro,
     'portfolio': Portfolio,
@@ -82,7 +79,7 @@ export default {
     color: #4E5053;
   }
 
-  a:hover, :focus, :active {
+  a:hover, :focus{
     color: #8AADDA;
   }
 
