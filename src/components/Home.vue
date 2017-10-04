@@ -40,8 +40,12 @@ export default {
     border-radius: 50%;
     border: 2px solid #2c3e50;
   }
+
   body {
-    background-color: #C5CBD3; 
+    background-color: #C5CBD3;
+  }
+
+  #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
