@@ -21,8 +21,4 @@ export default {
 .site-sub-heading{
   margin-bottom: 50px;
 }
-
-h2 {
-  word-wrap: nowrap;
-}
 </style>
