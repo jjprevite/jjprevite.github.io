@@ -128,5 +128,9 @@ export default {
     .v--modal-overlay .v--modal-box {
       overflow: overlay;
     }
+
+    p {
+      margin: 0 20px 1rem;
+    }
   }
 </style>

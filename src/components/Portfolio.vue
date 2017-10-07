@@ -2,7 +2,6 @@
   <section id="portfolio">
     <h3 class="section-heading">Portfolio</h3>
     <p class="section-sub-heading">Below, you'll find a few projects I've worked on recently:</p>
-    
     <b-container>
       <b-row>
         <b-col v-for="portfolioItem in portfolioItems">
@@ -216,6 +215,10 @@ export default {
     .portfolio-item-image {
       height: 95%;
       width: 95%;
+    }
+
+    .section-sub-heading {
+      margin: 0 20px 1rem;
     }
   }
 

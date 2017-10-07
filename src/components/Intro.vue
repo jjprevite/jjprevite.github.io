@@ -1,9 +1,7 @@
 <template>
   <section id="intro">
-    <b-container>
-      <h3 class="first-heading">Howdy!</h3>
-      <p class="section-sub-heading">Pleasure to meet you! </br> Education, languages, culture, music and the outdoors excite me. </br> Always open to new opportunities.</p>    
-  </b-container>
+    <h3 class="first-heading">Howdy!</h3>
+    <p class="section-sub-heading">Pleasure to meet you! </br> Education, languages, culture, music and the outdoors excite me. </br> Always open to discussing new opportunities.</p>    
   </section>
 </template>
 
