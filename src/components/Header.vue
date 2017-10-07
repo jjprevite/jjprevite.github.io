@@ -1,7 +1,7 @@
 <template>
     <header>
         <h1 class="site-title">Joe Previte</h1>
-        <h2 class="site-sub-heading">Developer, Designer and Life-Long Learner.</h2>
+        <h2 class="site-sub-heading">Developer, Designer and Life&#8209;Long&nbsp;Learner.</h2>
     </header>
 </template>
 
@@ -20,5 +20,9 @@ export default {
 <style scoped>
 .site-sub-heading{
   margin-bottom: 50px;
+}
+
+h2 {
+  word-wrap: nowrap;
 }
 </style>
