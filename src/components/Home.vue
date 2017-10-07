@@ -108,6 +108,8 @@ export default {
 
   .v--modal {
     background-color: #C5CBD3;
+    height: 100% !important;
+    top: 0 !important;
   }
 
   @media screen and (max-width: 768px) {
@@ -121,6 +123,10 @@ export default {
 
     h3 {
       font-size: 2em;
+    }
+
+    .v--modal-overlay .v--modal-box {
+      overflow: overlay;
     }
   }
 </style>
