@@ -37,6 +37,12 @@ ul {
   padding: 0;
 }
 
+@media screen and (max-width: 768px) {
+  ul {
+    margin-top: 23px;
+  }
+}
+
 li {
   display: inline-block;
   margin: 0 10px;
