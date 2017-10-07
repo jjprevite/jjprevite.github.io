@@ -154,6 +154,12 @@ export default {
     transition: border-radius background-color color 0.3s;
   }
 
+  @media screen and (max-width:768px) {
+    .portfolio-card {
+      margin-bottom: 20px;
+    }
+  }
+
   .portfolio-card:hover {
     /*background-color: #3D3F41;*/
     border-radius: 50%;
