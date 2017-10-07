@@ -217,6 +217,13 @@ export default {
     right: 25px;
   }
 
+  @media screen and (max-width: 768px) {
+    .close {
+      top: 5px;
+      right: 5px;
+    }
+  }
+
   .close::before {
     content: "X";
     color: #C5CBD3;
