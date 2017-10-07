@@ -11,7 +11,7 @@
       </b-row>
     </b-container>
 
-      <modal v-for="portfolioItem in portfolioItems" :name="portfolioItem.id" :adaptive="true" width="100%" height="100%" @before-open="beforeOpen">
+      <modal v-for="portfolioItem in portfolioItems" :name="portfolioItem.id" :adaptive="true" width="100%" height="auto" :scrollable="true" @before-open="beforeOpen">
         <div>
           <button class="close" @click="hide(portfolioItem.id)"></button>
         </div>
@@ -97,7 +97,7 @@ export default {
           url: 'http://www.paulrenefurniture.com/'
         },
         {
-          blog: false,
+          blog: true,
           codeUrl: false,
           description: 'A WordPress site I helped with during my internship at Distill Mill. For this project, I worked on both the back-end and front-end, using both HTML, CSS and PHP. **This site is not yet live, hence no image and no link.**',
           id: 'touchdown-sportswear-website',
