@@ -1,7 +1,9 @@
 <template>
 	<b-container>
-		<h5 class="footer-text">Made with <icon name="music" style="font-size:em;"></icon> and <icon name="heart"></icon> in Arizona by Joe Previte &copy; {{ date }}</h5>
-</b-container>
+    <footer>
+  		<h5 class="footer-text">Made with <icon name="music" style="font-size:em;"></icon> and <icon name="heart"></icon> in Arizona by Joe Previte &copy; {{ date }}</h5>
+    </footer>
+  </b-container>
 </template>
 
 <script>
@@ -32,5 +34,9 @@ export default {
   max-height: 100%;
 }
 	
-
+@media screen and (max-width: 768px) {
+  footer {
+    margin-bottom: 25px;
+  }
+}
 </style>
