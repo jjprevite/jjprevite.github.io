@@ -109,4 +109,18 @@ export default {
   .v--modal {
     background-color: #C5CBD3;
   }
+
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 6em;
+    }
+
+    h2 {
+      font-size: 2.4em;
+    }
+
+    h3 {
+      font-size: 2em;
+    }
+  }
 </style>
