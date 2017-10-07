@@ -120,7 +120,7 @@ export default {
       this.$modal.hide(modalName)
     },
     beforeOpen (event) {
-      console.log(event.params.foo)
+      // console.log(event.params.foo)
     }
   }
 }
@@ -136,6 +136,18 @@ export default {
   li {
     display: inline-block;
     margin: 0 10px;
+  }
+
+  @media screen and (max-width: 768px) {
+    li {
+      display: block;
+      margin: 0 auto 10px;
+      width: 95%;
+    }
+
+     li button.btn-in-modal {
+      width: 100%;
+    }
   }
 
   a {
@@ -177,7 +189,7 @@ export default {
   }
 
   .portfolio-item-heading {
-    margin: 50px auto 25px;
+    margin: 50px auto 10px;
   }
 
   .portfolio-item-description {
@@ -186,9 +198,22 @@ export default {
     text-align: center;
   }
 
+  @media screen and (max-width: 768px) {
+    .portfolio-item-description {
+      max-width: 95%;
+    }
+  }
+
   .portfolio-item-image {
     height: 50%;
     width: 50%;
+  }
+
+  @media screen and (max-width: 768px) {
+    .portfolio-item-image {
+      height: 95%;
+      width: 95%;
+    }
   }
 
   .btn-in-modal {
