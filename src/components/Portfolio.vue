@@ -168,7 +168,10 @@ export default {
 
   @media screen and (max-width:768px) {
     .portfolio-card {
+      font-size: 1.5em;
       margin-bottom: 20px;
+      width: 200px;
+      height: 200px;
     }
   }
 
