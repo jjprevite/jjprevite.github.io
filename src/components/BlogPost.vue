@@ -1,7 +1,7 @@
 <template>
     <article id="single-blog-post">
+        <h1 class="heading">{{ post.title }}</h1>
         <b-container>
-          <h1 class="heading">{{ post.title }}</h1>
           <figure v-if="post.image">
               <img :src="post.image">
           </figure>
@@ -68,10 +68,6 @@ export default {
 figure img {
   width: 100%;
   margin: 10px 20px;
-}
-
-.copy {
-  margin: 0 20px;
 }
 
 .site-title a {
