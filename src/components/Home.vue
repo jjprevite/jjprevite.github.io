@@ -107,7 +107,7 @@ export default {
   }
 
   .v--modal {
-    background-color: #C5CBD3;
+    background-color: #C5CBD3 !important;
     height: 100% !important;
     top: 0 !important;
   }
