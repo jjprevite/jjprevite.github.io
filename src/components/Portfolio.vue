@@ -21,11 +21,11 @@
             <img class="portfolio-item-image" :src="portfolioItem.image"/>
           </figure>
           <ul>
-            <li v-if="portfolioItem.blog"><router-link v-bind:to="'/blog/' + portfolioItem.id"><button class="btn-in-modal">Blog Post</button></router-link></li>
-            <li v-if="portfolioItem.medium"><a :href="portfolioItem.medium"><button class="btn-in-modal">Medium Post</button></a></li>
-            <li v-if="portfolioItem.url" ><a :href="portfolioItem.url"><button class="btn-in-modal">See live</button></a></li>
-            <li v-if="portfolioItem.codeUrl"><a :href="portfolioItem.codeUrl"><button class="btn-in-modal">View Code</button></a></li>
-            <li v-if="portfolioItem.pullRequest"><a :href="portfolioItem.pullRequest"><button class="btn-in-modal">View PR</button></a></li>
+            <li v-if="portfolioItem.blog"><router-link v-bind:to="'/blog/' + portfolioItem.id"><button class="btn-in-modal" @click="hide(portfolioItem.id)">Blog Post</button></router-link></li>
+            <li v-if="portfolioItem.medium"><a :href="portfolioItem.medium"><button class="btn-in-modal" @click="hide(portfolioItem.id)">Medium Post</button></a></li>
+            <li v-if="portfolioItem.url" ><a :href="portfolioItem.url"><button class="btn-in-modal" @click="hide(portfolioItem.id)">See live</button></a></li>
+            <li v-if="portfolioItem.codeUrl"><a :href="portfolioItem.codeUrl"><button class="btn-in-modal" @click="hide(portfolioItem.id)">View Code</button></a></li>
+            <li v-if="portfolioItem.pullRequest"><a :href="portfolioItem.pullRequest"><button class="btn-in-modal" @click="hide(portfolioItem.id)">View PR</button></a></li>
           </ul>
         </b-container>
       </modal>
