@@ -3,7 +3,7 @@
 		{
 			"title": "Building a Success Story Machine",
 			"id": "success-story-machine",
-			"image": "/static/successstorymachine.gif",
+			"image": "/static/successstorymachine.png",
 			"video": false,
 			"description": "Per the freeCodeCamp Front-End Certificate curriculum, I created a Random Quote Machine, or in my case, a Success Story Machine. It is a simple generator that provides links to stories about self-taught developers finding jobs. The purpose was to give the project my own twist and build something that others might find useful.",
 			"technologies": "HTML/CSS, vanillaJS",
@@ -13,7 +13,7 @@
 		{
 			"title": "Local Weather Project",
 			"id": "local-weather-project",
-			"image": "/static/localweather.gif",
+			"image": "/static/localweather.png",
 			"video": false,
 			"description": "For this project, I was required to use geolocation to find a user's location and then to use a weather API to display information based on that location.",
 			"technologies": "HTML/CSS, vanillaJS and jQuery",
@@ -21,10 +21,10 @@
 			"learned": "<p>I learned how to make API calls using AJAX and how to use jQuery to create basic animations. The Dark Sky docs didn't want me to have my API key public (which makes sense) but it set me back in the beginning. Using AJAX and \"jsonp\", I was able to make API calls.</p><p>After I finished the project, I decided to add some animation to make it more interactive and user-friendly. I used jQuery to add a \"loading screen\" so users knew the weather information needed a few extra seconds to load. In my next projects, I hope to use more jQuery.</p>"
 		},
 		{
-			"title": "Web Bakers - a Chingu Collaboration Web App",
+			"title": "Web Bakers - a Chingu Project",
 			"id": "web-bakers",
 			"image": false,
-			"video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/SfPO1UfYoB8?ecver=1' frameborder='0' allowfullscreen></iframe>",
+			"video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/SfPO1UfYoB8?ecver=1' frameborder='0' allowfullscreen style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;'></iframe>",
 			"description": "For this project, I joined a team of two other developers I met through the Chingu community- Rachel and Reuben- and we had approximately 5 weeks to build an MVP. We assigned three roles - Project Manager/Git Master, Lead Frontend and Lead Backend. I offered to be the Lead Backend. I also offered to design the logo since I have some background in graphic design.We decided to build a web app for people to share project ideas.",
 			"technologies": "HTML/CSS, MongoDB, Mongoose, Express and Passport.",
 			"struggles": "<p>The toughest part of this project was finding time to work on this. Originally, I took the ambition to suggest we commit to 7 hours/week. Granted, this was before I started an internship at a web design agency called Distill Mill. Little did I know, I'd be working most days from 8:30pm-6:30pm. That left little time to work on this project.</p><p>However, my teammates were understanding because they also weren't able to commit as much time as they had originally hoped to.</p><p>The most challenging technical issue we ran into was authentication. When we implemented Passport.js, we expected it to authenticate users when they logged in. However, it didn't work. We tried troubleshooting it and then I finally figured it out! It was because Passport was checking the username against the database but we asked users to login with their email. So to fix it, all I had to do was change the login input to ask for username instead.</p>",
@@ -33,7 +33,7 @@
 		{
 			"title": "Paul Rene Website",
 			"id": "paul-rene-website",
-			"image": "/static/paulrenefurniture.gif",
+			"image": "/static/paulrenefurniture.png",
 			"video": false,
 			"description": "As my first large project at my internship with Distill Mill, I coded the backend and some frontend  of a landing page for Paul Rene Furniture based on a Photoshop mockup.",
 			"technologies": "HTML/CSS and WordPress (PHP), Advanced Custom Fields plugin",
@@ -43,7 +43,7 @@
 		{
 			"title": "Touchdown Sportswear Website",
 			"id": "touchdown-sportswear-website",
-			"image": false,
+			"image": "/static/touchdown.png",
 			"video": false,
 			"description": "This project consisted of a custom WordPress theme built for a local business in Peoria, AZ. My boss tasked me with the backend side of this project but ended up needing my help on the frontend as well.",
 			"technologies": "HTML/CSS and WordPress (PHP), Advanced Custom Fields plugin",

@@ -1,12 +1,13 @@
 <template>
+  <b-container>  
     <article id="single-blog-post">
         <h1 class="heading">{{ post.title }}</h1>
-        <b-container>
+        <b-container v-if="post.image">
           <figure v-if="post.image">
               <img :src="post.image">
           </figure>
-          <div v-if="post.video" v-html="post.video"></div>
         </b-container>
+        <div class="video-wrapper" v-if="post.video" v-html="post.video"></div>
         <section id="description">
           <b-container>
             <h3 class="heading-description">Description</h3>
@@ -35,6 +36,7 @@
           <h6 class="home-link"><router-link to="/">Back to Home</router-link></h6>
         </b-container>
     </article>
+  </b-container>
 </template>
 
 <script>
@@ -62,12 +64,11 @@ export default {
 }
 
 .heading {
-  margin-bottom: 50px;
+  margin: 0 0 50px;
 }
 
 figure img {
   width: 100%;
-  margin: 10px 20px;
 }
 
 .site-title a {
@@ -83,4 +84,17 @@ figure img {
   text-align: center;
   margin: 0 auto 25px;
 }
+
+h3 {
+  margin: 0;
+}
+
+.video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+  margin: 0 15px;
+}
+
 </style>
