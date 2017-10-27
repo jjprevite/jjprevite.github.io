@@ -23,7 +23,7 @@
           <ul>
             <li v-if="portfolioItem.blog"><router-link v-bind:to="'/blog/' + portfolioItem.id"><button class="btn-in-modal" @click="hide(portfolioItem.id)">Blog Post</button></router-link></li>
             <li v-if="portfolioItem.medium"><a :href="portfolioItem.medium"><button class="btn-in-modal" @click="hide(portfolioItem.id)">Medium Post</button></a></li>
-            <li v-if="portfolioItem.url" ><a :href="portfolioItem.url"><button class="btn-in-modal" @click="hide(portfolioItem.id)">See live</button></a></li>
+            <li v-if="portfolioItem.url" ><a :href="portfolioItem.url" target="_blank"><button class="btn-in-modal" @click="hide(portfolioItem.id)">See live</button></a></li>
             <li v-if="portfolioItem.codeUrl"><a :href="portfolioItem.codeUrl"><button class="btn-in-modal" @click="hide(portfolioItem.id)">View Code</button></a></li>
             <li v-if="portfolioItem.pullRequest"><a :href="portfolioItem.pullRequest"><button class="btn-in-modal" @click="hide(portfolioItem.id)">View PR</button></a></li>
           </ul>
@@ -56,22 +56,22 @@ export default {
           codeUrl: 'https://codepen.io/jjprevite/pen/awwbRd',
           description: 'For a freeCodeCamp project, I decided to turn a Random Quote Generator into a Success Story Machine. It provides you with links to stories of self-taugh programmers making it in the industry.',
           id: 'success-story-machine',
-          image: '/static/successstorymachine.gif',
+          image: '/static/successstorymachine.png',
           medium: false,
           name: 'Success Story Machine',
           pullRequest: false,
-          url: 'https://jjprevite.github.io/projects/successStoryMachine/index.html'
+          url: 'https://jjprevite.github.io/projects/successStoryMachine/'
         },
         {
           blog: true,
           codeUrl: 'https://codepen.io/jjprevite/pen/bRojZo',
           description: 'Based on user stories defined by freeCodeCamp, I built a website that shows the local weather using geolocation and the Dark Sky API.',
           id: 'local-weather-project',
-          image: '/static/localweather.gif',
+          image: '/static/localweather.png',
           medium: false,
           name: 'Local Weather Project',
           pullRequest: false,
-          url: 'https://jjprevite.github.io/projects/localWeather/index.html'
+          url: 'https://jjprevite.github.io/projects/localWeather/'
         },
         {
           blog: true,
@@ -104,7 +104,7 @@ export default {
           medium: false,
           name: 'Touchdown Sportswear Website',
           pullRequest: false,
-          url: false
+          url: 'http://www.touchdownsportswear.com/'
         }
       ]
     }
