@@ -1,7 +1,7 @@
 <template>
     <main>
       <app-header></app-header>
-      <img class="headshot" src="../assets/headshot.jpg">
+      <img class="headshot" src="../../static/headshot.jpeg">
       <intro></intro>
       <portfolio></portfolio>
       <contact></contact>
