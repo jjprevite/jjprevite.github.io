@@ -42,7 +42,7 @@ export default {
   }
 
   body {
-    background-color: #C5CBD3;
+    background-color: #dadada;
   }
 
   #app {
@@ -96,6 +96,43 @@ export default {
 
   section {
     margin: 50px auto;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  @media screen and (max-width: 768px) {
+    li {
+      display: block;
+      margin: 0 auto 10px;
+      width: 95%;
+    }
+
+     li button.btn-in-modal {
+      width: 100%;
+    }
+  }
+
+  .btn {
+    background-color: #354253;
+    border: none;
+    border-radius: 10px;
+    color: #C5CBD3;
+    width: 150px;
+    height: 50px;
+    font-size: 1.25em;
+    transition: border-radius font-weight 0.5s;
+  }
+
+  .btn:hover {
+    font-weight: 700;
   }
 
   .section-heading {

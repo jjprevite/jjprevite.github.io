@@ -17,7 +17,8 @@ export default {
       socialNetworks: [
         { name: 'twitter', url: 'https://twitter.com/jjprevite' },
         { name: 'linkedin', url: 'https://www.linkedin.com/in/jjprevite' },
-        { name: 'github', url: 'https://github.com/jjprevite' }
+        { name: 'github', url: 'https://github.com/jjprevite' },
+        { name: 'medium', url: 'https://medium.freecodecamp.org/@jjprevite' }
       ]
     }
   }

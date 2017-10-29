@@ -20,4 +20,8 @@ export default {
 .first-heading {
   margin-bottom:  10px
 }
+
+#intro {
+  max-width: 625px;
+}
 </style>
