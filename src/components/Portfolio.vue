@@ -9,27 +9,25 @@
         </b-col>
       </b-row>
     </b-container>
-
-      <modal v-for="portfolioItem in portfolioItems" :name="portfolioItem.id" :adaptive="true" width="100%" height="auto" :scrollable="true" @before-open="beforeOpen">
-        <div>
-          <button class="close" @click="hide(portfolioItem.id)"></button>
-        </div>
-        <b-container class="portfolio-item-container">
-          <h4 class="portfolio-item-heading">{{ portfolioItem.name }}</h4>
-          <p class="portfolio-item-description">{{ portfolioItem.description }}</p>
-          <figure v-if="portfolioItem.image">
-            <img class="portfolio-item-image" :src="portfolioItem.image"/>
-          </figure>
-          <ul>
-            <li v-if="portfolioItem.blog"><router-link v-bind:to="'/blog/' + portfolioItem.id"><button class="btn-in-modal" @click="hide(portfolioItem.id)">Blog Post</button></router-link></li>
-            <li v-if="portfolioItem.medium"><a :href="portfolioItem.medium"><button class="btn-in-modal" @click="hide(portfolioItem.id)">Medium Post</button></a></li>
-            <li v-if="portfolioItem.url" ><a :href="portfolioItem.url" target="_blank"><button class="btn-in-modal" @click="hide(portfolioItem.id)">See live</button></a></li>
-            <li v-if="portfolioItem.codeUrl"><a :href="portfolioItem.codeUrl"><button class="btn-in-modal" @click="hide(portfolioItem.id)">View Code</button></a></li>
-            <li v-if="portfolioItem.pullRequest"><a :href="portfolioItem.pullRequest"><button class="btn-in-modal" @click="hide(portfolioItem.id)">View PR</button></a></li>
-          </ul>
-        </b-container>
-      </modal>
-
+    <modal v-for="portfolioItem in portfolioItems" :name="portfolioItem.id" :adaptive="true" width="100%" height="auto" :scrollable="true">
+      <div>
+        <button class="close" @click="hide(portfolioItem.id)"></button>
+      </div>
+      <b-container class="portfolio-item-container">
+        <h4 class="portfolio-item-heading">{{ portfolioItem.name }}</h4>
+        <p class="portfolio-item-description">{{ portfolioItem.description }}</p>
+        <figure v-if="portfolioItem.image">
+          <img class="portfolio-item-image" :src="portfolioItem.image"/>
+        </figure>
+        <ul>
+          <li v-if="portfolioItem.blog"><router-link v-bind:to="'/blog/' + portfolioItem.id"><button class="btn" @click="hide(portfolioItem.id)">Blog Post</button></router-link></li>
+          <li v-if="portfolioItem.medium"><a :href="portfolioItem.medium"><button class="btn" @click="hide(portfolioItem.id)">Medium Post</button></a></li>
+          <li v-if="portfolioItem.url" ><a :href="portfolioItem.url" target="_blank"><button class="btn" @click="hide(portfolioItem.id)">See live</button></a></li>
+          <li v-if="portfolioItem.codeUrl"><a :href="portfolioItem.codeUrl"><button class="btn" @click="hide(portfolioItem.id)">View Code</button></a></li>
+          <li v-if="portfolioItem.pullRequest"><a :href="portfolioItem.pullRequest"><button class="btn" @click="hide(portfolioItem.id)">View PR</button></a></li>
+        </ul>
+      </b-container>
+    </modal>
   </section>
 </template>
 
@@ -93,7 +91,7 @@ export default {
           medium: false,
           name: 'Paul Rene Furniture Website',
           pullRequest: false,
-          url: 'http://www.paulrenefurniture.com/'
+          url: false
         },
         {
           blog: true,
@@ -104,7 +102,7 @@ export default {
           medium: false,
           name: 'Touchdown Sportswear Website',
           pullRequest: false,
-          url: 'http://www.touchdownsportswear.com/'
+          url: false
         }
       ]
     }
@@ -117,9 +115,6 @@ export default {
     hide (modalName) {
       this.active = false
       this.$modal.hide(modalName)
-    },
-    beforeOpen (event) {
-      // console.log(event.params.foo)
     }
   }
 }
@@ -127,26 +122,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-
-  li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-
-  @media screen and (max-width: 768px) {
-    li {
-      display: block;
-      margin: 0 auto 10px;
-      width: 95%;
-    }
-
-     li button.btn-in-modal {
-      width: 100%;
-    }
+  #portfolio {
+    max-width: 625px;
   }
 
   a {
@@ -182,6 +159,9 @@ export default {
     font-size: 1.15em;
   }
 
+  .col {
+    margin-bottom: 25px;
+  }
   .portfolio-card:active {
     outline: none;
   }
@@ -220,21 +200,6 @@ export default {
     .section-sub-heading {
       margin: 0 20px 1rem;
     }
-  }
-
-  .btn-in-modal {
-    background-color: #354253;
-    border: none;
-    border-radius: 10px;
-    color: #C5CBD3;
-    width: 150px;
-    height: 50px;
-    font-size: 1.25em;
-    transition: border-radius font-weight 0.5s;
-  }
-
-  .btn-in-modal:hover {
-    font-weight: 700;
   }
 
   .close {
