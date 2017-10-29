@@ -33,7 +33,12 @@
           </b-container>
         </section>
         <b-container>
-          <h6 class="home-link"><router-link to="/">Back to Home</router-link></h6>
+          <ul>
+            <li v-if="post.url" ><a :href="post.url" target="_blank"><button class="btn">See live</button></a></li>
+            <li v-if="post.codeUrl"><a :href="post.codeUrl"><button class="btn">View Code</button></a></li>
+            <li v-if="post.pullRequest"><a :href="post.pullRequest"><button class="btn">View PR</button></a></li>
+            <li><router-link to="/"><button class="home-link btn">Back to Home</button></router-link></li>
+          </ul>
         </b-container>
     </article>
   </b-container>
@@ -82,7 +87,7 @@ figure img {
 
 .home-link {
   text-align: center;
-  margin: 0 auto 25px;
+  color: #C5CBD3;
 }
 
 h3 {
@@ -97,4 +102,10 @@ h3 {
   margin: 0 15px;
 }
 
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0
+}
 </style>
