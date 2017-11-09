@@ -96,7 +96,7 @@ export default {
         {
           blog: true,
           codeUrl: false,
-          description: 'A WordPress site I helped with during my internship at Distill Mill. For this project, I worked on both the back-end and front-end, using both HTML, CSS and PHP. **This site is not yet live, hence no image and no link.**',
+          description: 'A WordPress site I helped with during my internship at Distill Mill. For this project, I worked on both the back-end and front-end, using both HTML, CSS and PHP.',
           id: 'touchdown-sportswear-website',
           image: '/static/touchdown.png',
           medium: false,
