@@ -13,7 +13,8 @@ import VModal from 'vue-js-modal'
 
 Vue.config.productionTip = false
 Vue.use(VueAnalytics, {
-  id: 'UA-106285441-2'
+  id: 'UA-106285441-2',
+  router
 })
 Vue.component('icon', Icon)
 Vue.use(BootstrapVue)
