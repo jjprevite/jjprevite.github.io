@@ -144,7 +144,7 @@ export default {
   }
 
   .v--modal {
-    background-color: #C5CBD3 !important;
+    background-color: #dadada !important;
     height: 100% !important;
     top: 0 !important;
   }
